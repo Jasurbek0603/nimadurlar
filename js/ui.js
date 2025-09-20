@@ -16,9 +16,9 @@ export function ui(cars) {
     const elInfo = clone.querySelector(".js-info");
 
     // id
+    elInfo.href = `/pages/details.html?id=${car.id}`;
     elDelete.id = car.id;
     elEdit.id = car.id;
-    elInfo.id = car.id;
 
     // content
     elName.innerHTML = car.name;
